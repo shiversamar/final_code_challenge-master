@@ -1,6 +1,6 @@
 # README
 
-Thank you visiting and review my code 
+Thank you visiting and reviewing this code  
 
 Project Specs - Make a barebones messaging board
 1. Users can register and then must be authenticated before logging in (we use Devise). Users should have an email (used for logging in), and a first and last name at a minimum. You can add things like a description or “about me” if you’d like.
