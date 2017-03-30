@@ -3,11 +3,12 @@
       <div class="col-md-4">
         <div class="message">
           <h5 class="message-title"><%= post.title %></h5>
-
-
-
           <p id="author">Author:<%= post.user.email %></p>
           <%= link_to "View Post", post_path(post), class: "btn btn-info" %>
         </div>
       </div>
   <% end %>
+
+  <div class="pagination pagination-centered">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+  </div>

@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts = Post.all.order("created_at DESC").paginate(page:params[:page],per_page:5)
+    @posts = Post.all.order("created_at DESC").paginate(page:params[:page],per_page:8)
 
     @user = User.find_by_id(params[:id])
     # @user = current_user.posts.build(params[:id])
@@ -21,7 +21,6 @@ class PostsController < ApplicationController
     # @post = Post.new(post_params)
     @post = current_user.posts.build
   end
-
 
 
   def create
