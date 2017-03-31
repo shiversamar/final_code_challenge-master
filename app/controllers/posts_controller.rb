@@ -55,7 +55,6 @@ class PostsController < ApplicationController
 
 
 
-
   private
       # Never trust parameters from the scary internet, only allow the white list through.
       def post_params

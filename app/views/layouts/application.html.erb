@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Message Board </title>
+     <!-- this will alter or show what your writing not just Message board title -->
+    <title><%=yield(:page_title)%> | Message Board </title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
@@ -13,14 +14,11 @@
     		<div class="container">
     			<div class="navbar-header">
       				<% if current_page?(root_path) %>
-                  <ul>
-                    <li class:"navbar-brand">Message Board</li>
-                  </ul>
+                  <p class:"navbar-brand">Message Board</p>
                <% else %>
                    <%= link_to "Back to All Posts", root_path %>
   			        <% end %>
           </div>
-
         			<ul class="navbar-nav nav">
         				<li><%= link_to "Sign Up", new_user_registration_path %></li>
         				<% if user_signed_in? %>
