@@ -6,7 +6,7 @@
       <div class="col-md-4">
         <div class="message">
           <h5 class="message-title"><%= post.title %></h5>
-          <p id="author">Author:<%= post.user.email %></p>
+          <p id="author">Author:<%= post.user.last_name %></p>
           <%= link_to "View Post", post_path(post), class: "btn btn-info" %>
         </div>
       </div>
