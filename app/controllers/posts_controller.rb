@@ -42,7 +42,7 @@ class PostsController < ApplicationController
     if @post.update(params[:post].permit(:title, :body, :image))
       redirect_to post_path
     else
-      render 'new'
+      render 'edit'
     end
   end
 
