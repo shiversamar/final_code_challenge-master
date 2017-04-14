@@ -5,8 +5,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order("created_at DESC").paginate(page:params[:page],per_page:8)
-    # @user = User.find_by_id(params[:id])
-    # @user = current_user.posts.build(params[:id])
   end
 
   def show
@@ -38,6 +36,7 @@ class PostsController < ApplicationController
   end
 
 
+  # this if post_path get posts#show  or else edit
   def update
     if @post.update(params[:post].permit(:title, :body, :image))
       redirect_to post_path

@@ -24,3 +24,44 @@
 # end # RSpec
 
 # <User id: 2, email: "home@yahoo.com", created_at: "2017-03-27 14:32:09", updated_at: "2017-03-27 14:32:09", first_name: nil, last_name: "ggfgfg", about_me: "sgfgsfg">
+
+
+# require 'spec_helper'
+#
+# describe User do
+#
+#   before do
+#     @user = User.new(name: "Example User", email: "user@example.com",
+#                      password: "foobar", password_confirmation: "foobar")
+#   end
+#
+#   subject { @user }
+#
+#   it { should respond_to(:name) }
+#   it { should respond_to(:email) }
+#   it { should respond_to(:password_digest) }
+#   it { should respond_to(:password) }
+#   it { should respond_to(:password_confirmation) }
+#   it { should respond_to(:authenticate) }
+#
+#   it { should be_valid }
+#
+#   it "should create a new instance given valid attributes" do
+#     User.create!(@attr)
+#   end
+#
+#   it "should require a name"  do
+#     no_name_user = User.new(@attr.merge(:name => ""))
+#     no_name_user.should_not be_valid
+#   end
+#
+#   it "should require an email address" do
+#     no_email_user = User.new(@attr.merge(:email => ""))
+#     no_email_user.should_not be_valid
+#   end
+#
+#   it "should reject names that are too long" do
+#     long_name = "a" * 51
+#     long_name_user = User.new(@attr.merge(:name => long_name))
+#     long_name_user.should_not be_valid
+#   end
