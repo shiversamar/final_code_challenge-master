@@ -2,9 +2,10 @@
 <div class="col-md-8 col-md-offset-2">
 
 <h1>Edit Post</h1>
-<%= simple_form_for @post do |f| %>
+<%= simple_form_for @post, url: post_path  do |f| %>
 <%= f.input :title, label: "Post Title" %>
 <%= f.input :body %>
+<%= f.input :image, as: :file %>
 <%= f.button :submit %>
 
 <% end %>
