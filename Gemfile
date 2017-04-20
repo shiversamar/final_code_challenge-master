@@ -20,7 +20,7 @@ gem 'devise', '~> 4.2'
 gem 'will_paginate', '~> 3.1'
 gem 'will_paginate-bootstrap', '~> 1.0'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-gem 'aws-sdk', '~> 2.9', '>= 2.9.7'
+gem 'aws-sdk', '~> 2.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
