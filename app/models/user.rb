@@ -2,7 +2,7 @@ class User < ApplicationRecord
   has_many :posts
   has_many :comments
 
-
+  validates :first_name, :last_name, :about_me, presence: true
 
   # before_save { |user| user.email = email.downcase }
   #
@@ -13,14 +13,6 @@ class User < ApplicationRecord
   #           uniqueness: { case_sensitive: false }
   # validates :password, presence: true, length: { minimum: 6 } if new?
   # validates :password_confirmation, presence: true if new?
-
-
-
-
-
-
-
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
