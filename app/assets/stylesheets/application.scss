@@ -108,7 +108,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 10px;
 	margin-left: 10px;
 	padding: 1.4em 1.4em;
-	height: 150px;
+	max-height: 150px;
+	min-height: 150px;
 	border-bottom: 4px solid #0a8fd5;
 
 	.message-title {
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #decor {
-  background-image: url(image_path("sign.jpg"));
+  background-image: url(image_path("back.jpg"));
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
